@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/ivDetailPhoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="@string/title_detail" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_gallery"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_camera" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etDetailNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_nom"
+            android:inputType="textPersonName"
+            android:autofillHints="name"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etDetailPrenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_prenom"
+            android:inputType="textPersonName"
+            android:autofillHints="name"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etDetailTelephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_telephone"
+            android:inputType="phone"
+            android:autofillHints="phone"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etDetailEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_email"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etDetailLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_latitude"
+            android:inputType="numberDecimal|numberSigned"
+            android:autofillHints=""
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etDetailLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_longitude"
+            android:inputType="numberDecimal|numberSigned"
+            android:autofillHints=""
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnViewOnMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_view_map"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnCall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_call"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_email" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Supprimer"
+            android:backgroundTint="#FF0000"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_cancel"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_save" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
